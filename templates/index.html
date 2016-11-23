@@ -114,7 +114,7 @@
 				{% for data in temp_arr %}
 				<tr>
 				  <td style="width:5%">{{data[0]}}</td>
-				  <td style="width:5%">{{data[2]}}</td>
+				  <td style="width:5%">{{'%0.2f'|format(data[2])}}</td>
 				</tr>
 				{% endfor %}
 			  </tbody>
@@ -132,7 +132,7 @@
 				{% for data in hum_arr %}
 				<tr>
 				  <td>{{data[0]}}</td>
-				  <td>{{data[2]}}</td>
+				  <td>{{'%0.2f'|format(data[2])}}</td>
 				</tr>          
 				{% endfor %}
 			  </tbody>
